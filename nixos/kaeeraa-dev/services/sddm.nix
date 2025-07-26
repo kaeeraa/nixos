@@ -1,6 +1,6 @@
 {
   displayManager.sddm = {
     enable = true;
-    theme = "catppucin-sddm-corners";
+    theme = "catppucin-latte";
   };
 }
