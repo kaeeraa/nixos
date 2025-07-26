@@ -4,5 +4,6 @@
     ./fail2ban.nix
     ./openssh.nix
     ./pipewire.nix
+    ./flatpak.nix
   ];
 }
