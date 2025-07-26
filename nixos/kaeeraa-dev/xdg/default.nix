@@ -1,5 +1,5 @@
 {
-  xdg = {
-    enable = true;
-  };
+  imports = [
+    ./portal.nix
+  ];
 }
