@@ -1,0 +1,5 @@
+{
+  boot.zfs = {
+    requestEncryptionCredentials = false;
+  };
+}
