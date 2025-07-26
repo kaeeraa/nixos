@@ -18,7 +18,6 @@
     nixpkgs,
     disko,
     home-manager,
-    catppuccin,
     zen-browser,
     chaotic,
   } @ inputs: {
