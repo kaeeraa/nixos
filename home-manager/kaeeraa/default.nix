@@ -8,5 +8,6 @@
     ./gtk.nix
     ./dconf.nix
     ./xdg.nix
+    ./xresources.nix
   ];
 }
