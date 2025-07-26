@@ -40,7 +40,6 @@
             home-manager.backupFileExtension = "hm.bck";
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.kaeeraa = import ./home-manager/kaeeraa;
           }
         ];
       };
@@ -51,9 +50,6 @@
         extraSpecialArgs = {inherit inputs;};
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [
-          # Shared modules
-          home-manager.homeModules.home-manager
-
           # Modules
           ./home-manager/kaeeraa
         ];
