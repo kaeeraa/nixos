@@ -9,7 +9,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    catppuccin.url = "github:catppuccin/nix";
     zen-browser.url = "github:youwen5/zen-browser-flake";
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
   };
@@ -30,7 +29,6 @@
         modules = [
           # Shared modules
           chaotic.nixosModules.default
-          catppuccin.nixosModules.catppuccin
           disko.nixosModules.disko
           home-manager.nixosModules.home-manager
 
@@ -55,7 +53,6 @@
         modules = [
           # Shared modules
           home-manager.homeModules.home-manager
-          catppuccin.homeModules.catppuccin
 
           # Modules
           ./home-manager/kaeeraa
