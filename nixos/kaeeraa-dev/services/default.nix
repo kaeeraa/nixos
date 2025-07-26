@@ -5,5 +5,6 @@
     ./openssh.nix
     ./pipewire.nix
     ./flatpak.nix
+    ./sddm.nix
   ];
 }
