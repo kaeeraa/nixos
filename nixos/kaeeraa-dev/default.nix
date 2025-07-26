@@ -13,5 +13,6 @@
     ./nix
     ./environment
     ./nixpkgs
+    ./fonts
   ];
 }

@@ -1,4 +1,6 @@
 {pkgs, ...}: {
+  imports = [./fontconfig.nix];
+
   fonts = {
     enableDefaultPackages = true;
     packages = with pkgs; [
@@ -6,12 +8,5 @@
       (nerdfonts.override {fonts = ["JetBrainsMono"];})
       material-design-icons
     ];
-    fontconfig = {
-      defaultFonts = {
-        monospace = ["JetBrainsMono Nerd Font"];
-        sansSerif = ["JetBrainsMono Nerd Font"];
-        serif = ["JetBrainsMono Nerd Font"];
-      };
-    };
   };
 }
