@@ -14,5 +14,6 @@
     ./environment
     ./nixpkgs
     ./fonts
+    ./xdg
   ];
 }
