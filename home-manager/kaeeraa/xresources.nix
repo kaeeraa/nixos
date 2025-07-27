@@ -1,7 +1,7 @@
 {
   xresources = {
     properties = {
-      "Xft.dpi" = 120;
+      "Xft.dpi" = 115;
     };
   };
 }
