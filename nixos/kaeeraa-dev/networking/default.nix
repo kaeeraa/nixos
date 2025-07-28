@@ -4,6 +4,7 @@
     ./networkmanager.nix
     ./nftables.nix
     ./stevenblack.nix
+    ./interfaces
   ];
   networking = {
     domain = "kaeeraa.dev";
