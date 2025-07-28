@@ -8,6 +8,8 @@
         background = ../assets/nixos-wallpaper.png;
         loginBackground = true;
       })
+      (pkgs.writeShellScriptBin "sudo" "doas $@")
+      (pkgs.writeShellScriptBin "run0" "doas $@")
     ];
   };
 }
