@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   programs.zsh = {
     enable = true;
-    setoptions = [
+    setOptions = [
       "HIST_IGNORE_DUPS"
       "SHARE_HISTORY"
       "HIST_FCNTL_LOCK"
