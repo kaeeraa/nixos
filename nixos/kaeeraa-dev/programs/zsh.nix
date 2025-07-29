@@ -14,7 +14,7 @@
 
     zsh-autoenv.enable = true;
     shellAliases = {
-      doas = "doas su -c --preserve-environment \"$@\"";
+      doas = "doas '$@'";
     };
     syntaxHighlighting = {
       enable = true;
