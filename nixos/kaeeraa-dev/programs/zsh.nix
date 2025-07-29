@@ -13,9 +13,6 @@
     '';
 
     zsh-autoenv.enable = true;
-    shellAliases = {
-      doas = "doas '$@'";
-    };
     syntaxHighlighting = {
       enable = true;
       highlighters = ["main" "brackets"];
