@@ -11,7 +11,7 @@
       })
 
       # Workaround for nh (see nix-community/nh#236)
-      (pkgs.writeShellScriptBin "sudo" "doas su -c--preserve-environment \"$@\"")
+      (pkgs.writeShellScriptBin "sudo" "doas su -c --preserve-environment \"$@\"")
       (pkgs.writeShellScriptBin "run0" "doas su -c --preserve-environment \"$@\"")
 
       mangohud
