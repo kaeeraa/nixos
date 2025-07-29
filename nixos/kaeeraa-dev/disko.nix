@@ -56,6 +56,20 @@
           type = "zfs_fs";
           mountpoint = "/persist";
         };
+        swap = {
+          type = "zfs_volume";
+          size = "16G";
+          content.type = "swap";
+          options = {
+            volblocksize = "4096";
+            compression = "zle";
+            logbias = "throughput";
+            sync = "always";
+            primarycache = "metadata";
+            secondarycache = "none";
+            "com.sun:auto-snapshot" = "false";
+          };
+        };
       };
     };
   };
