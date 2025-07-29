@@ -1,5 +1,6 @@
 {pkgs, ...}: {
   environment = {
+    memoryAllocator.provider = "jemalloc";
     systemPackages = with pkgs; [
       (catppuccin-sddm.override {
         flavor = "latte";
