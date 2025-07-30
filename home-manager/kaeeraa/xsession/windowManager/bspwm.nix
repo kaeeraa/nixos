@@ -31,7 +31,7 @@ in {
       "${pkgs.feh}/bin/feh --bg-fill ~/Pictures/Wallpapers/nixos-wallpaper.png"
       "${pkgs.dunst}/bin/dunst"
       "${pkgs.xorg.xrandr}/bin/xrandr --output DP-4 --mode 1920x1080 --rate 165 --primary"
-      "${pkgs.xorg.xrandr}/bin/xrandr --output DVI-D-0 --mode 1920x1080 --rate 60"
+      "${pkgs.xorg.xrandr}/bin/xrandr --output DVI-D-0 --mode 1920x1080 --rate 60 --right-of DP-4"
     ];
 
     rules = {
