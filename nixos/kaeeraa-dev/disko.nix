@@ -18,11 +18,18 @@
               };
             };
             root = {
-              size = "100%";
+              size = "170.2G";
               type = "BF00";
               content = {
                 type = "zfs";
                 pool = "zroot";
+              };
+            };
+            swap = {
+              size = "16G";
+              type = "8200";
+              content = {
+                type = "swap";
               };
             };
           };
@@ -50,24 +57,6 @@
             encryption = "aes-256-gcm";
             keyformat = "passphrase";
             keylocation = "prompt";
-          };
-        };
-        persist = {
-          type = "zfs_fs";
-          mountpoint = "/persist";
-        };
-        swap = {
-          type = "zfs_volume";
-          size = "16G";
-          content.type = "swap";
-          options = {
-            volblocksize = "4096";
-            compression = "zle";
-            logbias = "throughput";
-            sync = "always";
-            primarycache = "metadata";
-            secondarycache = "none";
-            "com.sun:auto-snapshot" = "false";
           };
         };
       };

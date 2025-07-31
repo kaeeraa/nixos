@@ -1,5 +1,5 @@
 {
   swapDevices = [
-    {device = "/dev/zvol/zroot/swap";}
+    {device = "/dev/disk/by-partlabel/swap";}
   ];
 }
