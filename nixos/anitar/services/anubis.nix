@@ -1,6 +1,5 @@
 {
   services.anubis = {
-    enable = true;
     instances.anitar = {
       enable = true;
       settings = {
