@@ -4,7 +4,7 @@
     ipv4.addresses = [
       {
         address = "91.92.70.2";
-        prefixLenght = 32;
+        prefixLength = 32;
       }
     ];
     ipv4.routes = [
