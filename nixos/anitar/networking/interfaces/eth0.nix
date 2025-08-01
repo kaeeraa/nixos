@@ -12,7 +12,6 @@
         address = "0.0.0.0";
         prefixLength = 24;
         via = "91.92.70.1";
-        options = {onlink = true;};
       }
     ];
   };
