@@ -1,0 +1,6 @@
+anime.tatar {
+  reverse_proxy http://127.0.0.1:8923 {
+    header_up X-Real-Ip {remote_host}
+    header_up X-Http-Version {http.request.proto}
+  }
+}

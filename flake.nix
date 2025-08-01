@@ -42,6 +42,25 @@
           }
         ];
       };
+      anitar = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = {inherit inputs;};
+        modules = [
+          # Shared modules
+          disko.nixosModules.disko
+          home-manager.nixosModules.home-manager
+
+          # Modules
+          ./nixos/kaeeraa-dev
+
+          # Users
+          {
+            home-manager.backupFileExtension = "hm.bck";
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+          }
+        ];
+      };
     };
 
     homeConfigurations = {

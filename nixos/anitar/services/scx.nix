@@ -1,0 +1,5 @@
+{
+  services.scx = {
+    enable = true;
+  };
+}
