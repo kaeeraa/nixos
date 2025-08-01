@@ -64,8 +64,22 @@
     };
 
     homeConfigurations = {
-      kaeeraa = home-manager.lib.homeManagerConfiguration {
-        extraSpecialArgs = {inherit inputs;};
+      "kaeeraa@kaeeraa-dev" = home-manager.lib.homeManagerConfiguration {
+        extraSpecialArgs = {
+          inherit inputs;
+          hostName = "kaeeraa-dev";
+        };
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        modules = [
+          # Modules
+          ./home-manager/kaeeraa
+        ];
+      };
+      "kaeeraa@anitar" = home-manager.lib.homeManagerConfiguration {
+        extraSpecialArgs = {
+          inherit inputs;
+          hostName = "anitar";
+        };
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [
           # Modules

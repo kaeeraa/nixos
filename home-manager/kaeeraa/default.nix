@@ -1,5 +1,5 @@
 {
-  config,
+  hostName,
   lib,
   ...
 }: {
@@ -14,7 +14,5 @@
       ./xdg.nix
       ./xresources.nix
     ]
-    ++ lib.mkIf (config.networking.hostname == "kaeeraa-dev") [
-      ./xsession
-    ];
+    ++ lib.optional (hostName == "kaeeraa-dev") ./xsession;
 }
