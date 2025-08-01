@@ -86,6 +86,17 @@
           ./home-manager/kaeeraa
         ];
       };
+      "windstone@anitar" = home-manager.lib.homeManagerConfiguration {
+        extraSpecialArgs = {
+          inherit inputs;
+          hostName = "anitar";
+        };
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        modules = [
+          # Modules
+          ./home-manager/windstone
+        ];
+      };
     };
 
     formatter = nixpkgs.legacyPackages.x86_64-linux.alejandra;
