@@ -1,11 +1,11 @@
-{pkgs, ...}: {
+{lib, pkgs, ...}: {
   imports = [
     ./users.nix
     ./groups.nix
   ];
 
   users = {
-    defaultUserShell = pkgs.zsh;
+    defaultUserShell = lib.mkForce pkgs.zsh;
     mutableUsers = false;
   };
 }
