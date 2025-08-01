@@ -9,7 +9,6 @@
     ];
     ipv4.routes = [
       {
-        to = "default";
         via = "91.92.70.1";
         options = {onlink = true;};
       }
