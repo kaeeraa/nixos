@@ -65,9 +65,6 @@
           options = {
             compression = "zstd";
             atime = "on";
-            encryption = "aes-256-gcm";
-            keyformat = "passphrase";
-            keylocation = "prompt";
           };
         };
       };
