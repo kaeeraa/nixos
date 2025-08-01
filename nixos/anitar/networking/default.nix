@@ -3,6 +3,7 @@
     ./firewall.nix
     ./networkmanager.nix
     ./nftables.nix
+    ./interfaces
   ];
   networking = {
     domain = "anime.tatar";
