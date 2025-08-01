@@ -20,13 +20,8 @@
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAG9vLzRoIqyiFTZ7pboRvMh822TMK5Lq64w+AUBI9+Y notwindstone@gmail.com"
       ];
     };
-    root = {
-      enable = true;
-      isNormalUser = true;
-      extraGroups = ["wheel" "networkmanager" "doas"];
-      openssh.authorizedKeys.keys = [
-        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOiS+V5QMGDfHlKtBQzsIfvQA1Nb+sRpBH6mlFJepIpH kaeeraa@kaeeraa-dev"
-      ];
-    };
+    root.openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOiS+V5QMGDfHlKtBQzsIfvQA1Nb+sRpBH6mlFJepIpH kaeeraa@kaeeraa-dev"
+    ];
   };
 }
