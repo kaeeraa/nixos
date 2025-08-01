@@ -51,7 +51,7 @@
           home-manager.nixosModules.home-manager
 
           # Modules
-          ./nixos/kaeeraa-dev
+          ./nixos/anitar
 
           # Users
           {
