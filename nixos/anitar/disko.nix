@@ -3,7 +3,7 @@
     disk = {
       main = {
         type = "disk";
-        device = "/dev/disk/by-id/ata-WALRAM_512GB_AA000000000000002946";
+        device = "/dev/disk/by-id/ata-QEMU_DVD-ROM_QM00003";
         content = {
           type = "gpt";
           partitions = {
