@@ -5,5 +5,6 @@
     ./gamescope.nix
     ./nekoray.nix
     ./zsh.nix
+    ./nix-ld.nix
   ];
 }
