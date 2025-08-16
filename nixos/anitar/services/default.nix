@@ -4,5 +4,7 @@
     ./openssh.nix
     ./anubis.nix
     ./caddy.nix
+    ./scx.nix
+    ./xray.nix
   ];
 }

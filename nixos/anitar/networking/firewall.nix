@@ -4,6 +4,6 @@
 
     allowPing = true;
     pingLimit = "2/second";
-    allowedTCPPorts = [22];
+    allowedTCPPorts = [22 433];
   };
 }

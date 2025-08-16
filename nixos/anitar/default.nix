@@ -1,6 +1,5 @@
 {
   imports = [
-    ./disko.nix
     ./boot
     ./networking
     ./services
@@ -12,5 +11,7 @@
     ./nix
     ./environment
     ./nixpkgs
+    ./systemd
+    ./disko.nix
   ];
 }

@@ -1,6 +1,5 @@
 {
   imports = [
-    ./efi.nix
-    ./systemd-boot.nix
+    ./grub.nix
   ];
 }

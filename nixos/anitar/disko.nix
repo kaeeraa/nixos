@@ -6,15 +6,19 @@
         device = "/dev/vda";
         content = {
           type = "gpt";
+          efiGptPartitionFirst = false;
           partitions = {
-            ESP = {
-              size = "2048M";
-              type = "EF00";
+            bios = {
+              size = "1M";
+              type = "EF02";
+            };
+            boot = {
+              size = "512M";
+              type = "8300";
               content = {
                 type = "filesystem";
-                format = "vfat";
+                format = "ext4";
                 mountpoint = "/boot";
-                mountOptions = ["umask=0077"];
               };
             };
             swap = {
@@ -61,7 +65,7 @@
         };
         home = {
           type = "zfs_fs";
-          mountpoint = null;
+          mountpoint = "/home";
           options = {
             compression = "zstd";
             atime = "on";
