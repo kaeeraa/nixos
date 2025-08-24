@@ -12,6 +12,7 @@
 
       packages = [
         inputs.zen-browser.packages.${pkgs.system}.default
+        inputs.freesmlauncher.packages.${pkgs.system}.default
       ];
     };
     root = {

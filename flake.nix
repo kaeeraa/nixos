@@ -11,6 +11,7 @@
     };
     zen-browser.url = "github:youwen5/zen-browser-flake";
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+    freesmlauncher.url = "git+https://github.com/FreesmTeam/FreesmLauncher.git";
   };
 
   outputs = {
@@ -20,6 +21,7 @@
     home-manager,
     zen-browser,
     chaotic,
+    freesmlauncher,
   } @ inputs: {
     nixosConfigurations = {
       kaeeraa-dev = nixpkgs.lib.nixosSystem {
