@@ -1,7 +1,6 @@
 {
   imports = [
     ./disko.nix
-    ./swapDevices.nix
     ./boot
     ./hardware
     ./networking

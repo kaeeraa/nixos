@@ -12,12 +12,13 @@
       "super + shift + {1-9,0}" = "bspc node -d '{1-9,10}' --follow";
       "super + shift + {Left,Down,Up,Right}" = "bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}";
       "super + alt + {Left,Down,Up,Right}" = "bspc node -v {-20 0,0 20,0 -20,20 0}";
-      "super + v" = "bspc node --state ~floating";
-      "super + alt + v" = "rofi clipmenu -location 1 -m -3";
-      "super + f" = "bspc node --state ~fullscreen";
+      "super + v" = "bspc node --state \~floating";
+      "super + alt + space" = "rofi -show run";
+      "super + f" = "bspc node --state \~fullscreen";
       "super + Print" = "ksnip --rectarea";
       "super + shift + Print" = "ksnip --current";
-      "XF86Audio{Lower,Raise}Volume" = "xbacklight -{inc,dec} 5 &";
+      "XF86AudioRaiseVolume" = "xbacklight -inc 5 &";
+      "XF86AudioLowerVolume" = "xbacklight -dec 5 &"
     };
   };
 }

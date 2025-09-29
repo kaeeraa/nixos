@@ -3,6 +3,7 @@
     systemPackages = with pkgs; [
       (catppuccin-sddm.override {
         flavor = "latte";
+        accent = "red";
         font = "JetBrainsMono Nerd Font";
         fontSize = "9";
         background = ../assets/nixos-wallpaper.png;
@@ -14,6 +15,7 @@
       (pkgs.writeShellScriptBin "run0" "doas $@")
 
       mangohud
+      babelfish
     ];
   };
 }

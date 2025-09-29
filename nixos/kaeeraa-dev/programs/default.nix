@@ -4,7 +4,7 @@
     ./steam.nix
     ./gamescope.nix
     ./nekoray.nix
-    ./zsh.nix
+    ./fish.nix
     ./nix-ld.nix
   ];
 }

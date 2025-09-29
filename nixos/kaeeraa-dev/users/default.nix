@@ -5,7 +5,7 @@
   ];
 
   users = {
-    defaultUserShell = pkgs.zsh;
+    defaultUserShell = pkgs.fish;
     mutableUsers = false;
   };
 }

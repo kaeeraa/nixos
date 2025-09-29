@@ -13,6 +13,11 @@
 
       # Development - Language Servers
       nil
+      clangd
+      neocmakelsp
+      vscode-langservers-extracted
+      yaml-language-server
+      vue-language-server
 
       # Development - Complilers
       python3Full

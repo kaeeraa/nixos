@@ -1,6 +1,7 @@
-{
+{ pkgs, ... }: {
   services.displayManager.sddm = {
     enable = true;
-    theme = "catppucin-latte";
+    theme = "catppuccin-latte-red";
+    package = pkgs.kdePackages.sddm;
   };
 }
