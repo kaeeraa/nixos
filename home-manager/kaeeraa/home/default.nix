@@ -13,14 +13,14 @@
 
       # Development - Language Servers
       nil
-      clangd
+      clang-tools
       neocmakelsp
       vscode-langservers-extracted
       yaml-language-server
       vue-language-server
 
       # Development - Complilers
-      python3Full
+      python313
       nodejs_24
       zulu24
 

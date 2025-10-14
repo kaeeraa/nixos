@@ -18,7 +18,7 @@
       "super + Print" = "ksnip --rectarea";
       "super + shift + Print" = "ksnip --current";
       "XF86AudioRaiseVolume" = "xbacklight -inc 5 &";
-      "XF86AudioLowerVolume" = "xbacklight -dec 5 &"
+      "XF86AudioLowerVolume" = "xbacklight -dec 5 &";
     };
   };
 }

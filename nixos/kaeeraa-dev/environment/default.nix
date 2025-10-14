@@ -6,8 +6,6 @@
         accent = "red";
         font = "JetBrainsMono Nerd Font";
         fontSize = "9";
-        background = ../assets/nixos-wallpaper.png;
-        loginBackground = true;
       })
 
       # Workaround for nh (see nix-community/nh#236)
