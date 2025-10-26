@@ -17,6 +17,7 @@
       "super + f" = "bspc node --state \~fullscreen";
       "super + Print" = "ksnip --rectarea";
       "super + shift + Print" = "ksnip --current";
+      "super + b" = "rofi-bluetooth";
       "XF86AudioRaiseVolume" = "xbacklight -inc 5 &";
       "XF86AudioLowerVolume" = "xbacklight -dec 5 &";
     };

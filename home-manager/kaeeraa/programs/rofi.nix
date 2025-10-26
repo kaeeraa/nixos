@@ -1,5 +1,5 @@
 {config, ...}: let
-  colors = config.catppuccin.colors;
+  colors = config.ayuMirage.colors;
 in {
   programs.rofi = {
     enable = true;
@@ -8,16 +8,16 @@ in {
       inherit (config.lib.formats.rasi) mkLiteral;
     in {
       "*" = {
-        background-color = mkLiteral colors.base;
-        text-color = mkLiteral colors.text;
-        border-color = mkLiteral colors.red;
+        background-color = mkLiteral colors.base00;
+        text-color = mkLiteral colors.base05;
+        border-color = mkLiteral colors.base08;
       };
       "window" = {
         transparency = "real";
-        background-color = mkLiteral colors.base;
+        background-color = mkLiteral colors.base00;
         border = 1;
         border-radius = 8;
-        border-color = mkLiteral colors.surface0;
+        border-color = mkLiteral colors.base03;
       };
       "element" = {
         padding = mkLiteral "1px";
@@ -28,17 +28,17 @@ in {
         text-color = mkLiteral "inherit";
       };
       "element selected" = {
-        background-color = mkLiteral colors.red;
-        text-color = mkLiteral colors.base;
+        background-color = mkLiteral colors.base08;
+        text-color = mkLiteral colors.base00;
       };
       "entry" = {
-        background-color = mkLiteral colors.surface0;
-        text-color = mkLiteral colors.text;
+        background-color = mkLiteral colors.base03;
+        text-color = mkLiteral colors.base05;
       };
       "inputbar" = {
         children = map mkLiteral ["prompt" "entry"];
-        background-color = mkLiteral colors.surface0;
-        text-color = mkLiteral colors.text;
+        background-color = mkLiteral colors.base03;
+        text-color = mkLiteral colors.base05;
       };
     };
   };

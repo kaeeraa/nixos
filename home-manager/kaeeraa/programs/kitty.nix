@@ -1,5 +1,5 @@
 {config, ...}: let
-  colors = config.catppuccin.colors;
+  colors = config.ayuMirage.colors;
 in {
   programs.kitty = {
     enable = true;
@@ -8,29 +8,28 @@ in {
       size = 11;
     };
     settings = {
-      background = colors.base;
-      foreground = colors.text;
-      selection_background = colors.lavender;
-      selection_foreground = colors.base;
-      url_color = colors.blue;
+      background = colors.base00;
+      foreground = colors.base05;
+      selection_background = colors.base0E;
+      selection_foreground = colors.base07;
+      url_color = colors.base0D;
 
-      color0 = "#5c5f77";
-      color1 = colors.red;
-      color2 = colors.green;
-      color3 = colors.yellow;
-      color4 = colors.blue;
-      color5 = colors.pink;
-      color6 = colors.teal;
-      color7 = "#acb0be";
-
-      color8 = "#6c6f85";
-      color9 = "#de293e";
-      color10 = "#49af3d";
-      color11 = "#eea02d";
-      color12 = "#456eff";
-      color13 = "#fe85d8";
-      color14 = "#2d9fa8";
-      color15 = "#bcc0cc";
+      color0 = colors.base00;
+      color1 = colors.base08;
+      color2 = colors.base0B;
+      color3 = colors.base0A;
+      color4 = colors.base0D;
+      color5 = colors.base0F;
+      color6 = colors.base0C;
+      color7 = colors.base05;
+      color8 = colors.base03;
+      color9 = colors.base08;
+      color10 = colors.base0B;
+      color11 = colors.base0A;
+      color12 = colors.base0D;
+      color13 = colors.base0F;
+      color14 = colors.base0C;
+      color15 = colors.base07;
 
       confirm_os_window_close = 0;
     };

@@ -9,6 +9,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     zen-browser.url = "github:youwen5/zen-browser-flake";
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     freesmlauncher.url = "git+https://github.com/FreesmTeam/FreesmLauncher.git";
@@ -19,6 +23,7 @@
     nixpkgs,
     disko,
     home-manager,
+    stylix,
     zen-browser,
     chaotic,
     freesmlauncher,
@@ -29,6 +34,7 @@
         specialArgs = {inherit inputs;};
         modules = [
           # Shared modules
+          stylix.nixosModules.stylix
           chaotic.nixosModules.default
           disko.nixosModules.disko
           home-manager.nixosModules.home-manager
@@ -73,6 +79,8 @@
         };
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         modules = [
+          # Shared Modules
+          stylix.homeModules.stylix
           # Modules
           ./home-manager/kaeeraa
         ];

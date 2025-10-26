@@ -37,6 +37,9 @@
 
       # Networking - Messengers
       ayugram-desktop
+
+      # Networking - Bluetooth
+      rofi-bluetooth
     ];
 
     sessionVariables = {

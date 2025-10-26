@@ -2,9 +2,9 @@
   imports = [
     ./initrd.nix
     ./tmp.nix
-    ./plymouth.nix
     ./loader
     ./zfs.nix
+    ./kernel
   ];
 
   boot = {

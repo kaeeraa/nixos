@@ -1,7 +1,7 @@
 {
   imports = [
     ./sxhkd.nix
-    ./polybar.nix
+    ./eww.nix
     ./picom.nix
     ./dunst.nix
     ./gpg-agent.nix

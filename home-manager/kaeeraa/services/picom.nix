@@ -1,5 +1,5 @@
 {config, ...}: let
-  colors = config.catppuccin.colors;
+  colors = config.ayuMirage.colors;
 in {
   services.picom = {
     enable = true;
@@ -10,7 +10,7 @@ in {
     settings = {
       corner-radius = 8;
       rounded-corners-exclude = ["class_g = 'Polybar'"];
-      shadow-color = "#${colors.lavender}20";
+      shadow-color = "#${colors.base0E}20";
       shadow-radius = 15;
       shadow-offset-x = -7;
       shadow-offset-y = -7;

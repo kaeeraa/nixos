@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: let
-  colors = config.catppuccin.colors;
+  colors = config.ayuMirage.colors;
 in {
   xsession.windowManager.bspwm = {
     enable = true;
@@ -20,9 +20,9 @@ in {
       borderless-monocle = true;
       gapless-monocle = true;
 
-      normal_border_color = colors.surface0;
-      focused_border_color = colors.red;
-      active_border_color = colors.lavender;
+      normal_border_color = colors.base03;
+      focused_border_color = colors.base08;
+      active_border_color = colors.base0E;
 
       focus_follows_pointer = true;
     };

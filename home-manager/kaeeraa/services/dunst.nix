@@ -3,7 +3,7 @@
   pkgs,
   ...
 }: let
-  colors = config.catppuccin.colors;
+  colors = config.ayuMirage.colors;
 in {
   services.dunst = {
     enable = true;
@@ -22,7 +22,7 @@ in {
         gap_size = 8;
 
         corner_radius = 8;
-        frame_color = colors.surface0;
+        frame_color = colors.base03;
         separator_color = "frame";
 
         font = "JetBrainsMono Nerd Font 10";
@@ -47,37 +47,37 @@ in {
       };
 
       urgency_low = {
-        background = colors.mantle;
-        foreground = colors.text;
-        frame_color = colors.surface0;
+        background = colors.base01;
+        foreground = colors.base05;
+        frame_color = colors.base03;
         timeout = 4;
         icon = "dialog-information";
       };
 
       urgency_normal = {
-        background = colors.mantle;
-        foreground = colors.text;
-        frame_color = colors.blue;
+        background = colors.base01;
+        foreground = colors.base05;
+        frame_color = colors.base0D;
         timeout = 6;
         icon = "dialog-information";
       };
 
       urgency_critical = {
-        background = colors.mantle;
-        foreground = colors.red;
-        frame_color = colors.red;
+        background = colors.base01;
+        foreground = colors.base08;
+        frame_color = colors.base08;
         timeout = 0;
         icon = "dialog-error";
       };
 
       category_system = {
-        frame_color = colors.lavender;
-        foreground = colors.lavender;
+        frame_color = colors.base0E;
+        foreground = colors.base0E;
       };
 
       category_network = {
-        frame_color = colors.blue;
-        foreground = colors.blue;
+        frame_color = colors.base0D;
+        foreground = colors.base0D;
       };
     };
   };

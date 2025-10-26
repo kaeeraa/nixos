@@ -1,6 +1,7 @@
 {
   imports = [
     ./disko.nix
+    ./stylix.nix
     ./boot
     ./hardware
     ./networking
@@ -15,5 +16,7 @@
     ./nixpkgs
     ./fonts
     ./xdg
+    ./powerManagement.nix
+    ./zramSwap.nix
   ];
 }
