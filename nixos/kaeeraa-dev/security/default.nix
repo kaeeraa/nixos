@@ -5,5 +5,6 @@
     ./doas.nix
     ./polkit.nix
     ./sudo.nix
+    ./wrappers.nix
   ];
 }

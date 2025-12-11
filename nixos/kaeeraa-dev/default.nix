@@ -16,6 +16,7 @@
     ./nixpkgs
     ./fonts
     ./xdg
+    ./virtualisation
     ./powerManagement.nix
     ./zramSwap.nix
   ];

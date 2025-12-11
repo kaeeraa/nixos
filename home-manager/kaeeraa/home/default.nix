@@ -22,7 +22,7 @@
       # Development - Complilers
       python313
       nodejs_24
-      zulu24
+      javaPackages.compiler.temurin-bin.jre-25
 
       # Development - Formatters
       alejandra
@@ -40,6 +40,11 @@
 
       # Networking - Bluetooth
       rofi-bluetooth
+
+      # etc
+      yandex-music
+      easyeffects
+      v2rayn
     ];
 
     sessionVariables = {

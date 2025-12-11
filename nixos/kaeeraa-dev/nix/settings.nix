@@ -1,7 +1,7 @@
 {
   nix.settings = {
     auto-optimise-store = true;
-    cores = 4;
+    cores = 16;
     experimental-features = ["nix-command" "flakes"];
 
     trusted-users = [

@@ -1,3 +1,3 @@
 {
-  imports = [./enp2s0.nix];
+  imports = [./enp11s0.nix];
 }

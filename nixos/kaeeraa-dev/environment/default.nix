@@ -14,6 +14,8 @@
 
       mangohud
       babelfish
+      gnome-keyring
+      javaPackages.compiler.temurin-bin.jre-25
     ];
   };
 }

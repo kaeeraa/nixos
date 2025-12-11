@@ -9,7 +9,7 @@ in {
     enable = true;
 
     monitors = {
-      DP-4 = ["2" "4" "5" "8" "0"];
+      DP-0 = ["2" "4" "5" "8" "0"];
       DVI-D-0 = ["1" "3" "6" "7" "9"];
     };
 
@@ -30,8 +30,8 @@ in {
     startupPrograms = [
       "${pkgs.feh}/bin/feh --bg-fill ~/Pictures/Wallpapers/nixos-wallpaper.png"
       "${pkgs.dunst}/bin/dunst"
-      "${pkgs.xorg.xrandr}/bin/xrandr --output DP-4 --mode 1920x1080 --rate 165 --primary --left-of DVI-D-0"
-      "${pkgs.xorg.xrandr}/bin/xrandr --output DVI-D-0 --mode 1920x1080 --rate 60 --right-of DP-4"
+      "${pkgs.xorg.xrandr}/bin/xrandr --output DP-0 --mode 1920x1080 --rate 165 --primary --left-of DVI-D-0"
+      "${pkgs.xorg.xrandr}/bin/xrandr --output DVI-D-0 --mode 1920x1080 --rate 60 --right-of DP-0"
     ];
 
     rules = {
