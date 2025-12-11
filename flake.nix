@@ -14,7 +14,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     zen-browser.url = "github:youwen5/zen-browser-flake";
-    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     freesmlauncher.url = "git+https://github.com/FreesmTeam/FreesmLauncher.git";
   };
 
@@ -25,7 +24,6 @@
     home-manager,
     stylix,
     zen-browser,
-    chaotic,
     freesmlauncher,
   } @ inputs: {
     nixosConfigurations = {
@@ -35,7 +33,6 @@
         modules = [
           # Shared modules
           stylix.nixosModules.stylix
-          chaotic.nixosModules.default
           disko.nixosModules.disko
           home-manager.nixosModules.home-manager
 
@@ -50,27 +47,7 @@
           }
         ];
       };
-      anitar = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = {inherit inputs;};
-        modules = [
-          # Shared modules
-          disko.nixosModules.disko
-          home-manager.nixosModules.home-manager
-
-          # Modules
-          ./nixos/anitar
-
-          # Users
-          {
-            home-manager.backupFileExtension = "hm.bck";
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-          }
-        ];
-      };
     };
-
     homeConfigurations = {
       "kaeeraa@kaeeraa-dev" = home-manager.lib.homeManagerConfiguration {
         extraSpecialArgs = {
@@ -85,30 +62,7 @@
           ./home-manager/kaeeraa
         ];
       };
-      "kaeeraa@anitar" = home-manager.lib.homeManagerConfiguration {
-        extraSpecialArgs = {
-          inherit inputs;
-          hostName = "anitar";
-        };
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        modules = [
-          # Modules
-          ./home-manager/kaeeraa
-        ];
-      };
-      "windstone@anitar" = home-manager.lib.homeManagerConfiguration {
-        extraSpecialArgs = {
-          inherit inputs;
-          hostName = "anitar";
-        };
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        modules = [
-          # Modules
-          ./home-manager/windstone
-        ];
-      };
     };
-
     formatter = nixpkgs.legacyPackages.x86_64-linux.alejandra;
   };
 }
