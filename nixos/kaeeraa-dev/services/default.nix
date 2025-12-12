@@ -8,6 +8,7 @@
     ./sddm.nix
     ./i2pd.nix
     ./blueman.nix
+    ./autorandr.nix
     ./samba.nix
   ];
 }
