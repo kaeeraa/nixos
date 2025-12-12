@@ -4,8 +4,7 @@
       elegant-sddm
 
       # Workaround for nh (see nix-community/nh#236)
-      (pkgs.writeShellScriptBin "sudo" "doas $@")
-      (pkgs.writeShellScriptBin "run0" "doas $@")
+      doas-sudo-shim
 
       mangohud
       babelfish
