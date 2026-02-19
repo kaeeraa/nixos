@@ -8,7 +8,9 @@
     ./sddm.nix
     ./i2pd.nix
     ./blueman.nix
-    ./autorandr.nix
     ./samba.nix
+    ./gnome-keyring.nix
+    ./zfs.nix
+    ./udev.nix
   ];
 }

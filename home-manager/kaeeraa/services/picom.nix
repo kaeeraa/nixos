@@ -2,7 +2,7 @@
   colors = config.ayuMirage.colors;
 in {
   services.picom = {
-    enable = true;
+    enable = false;
     fade = true;
     fadeDelta = 5;
     shadow = true;

@@ -1,6 +1,6 @@
 {
   services.i2pd = {
-    enable = true;
+    enable = false;
     address = "127.0.0.1";
     enableIPv6 = true;
     proto = {

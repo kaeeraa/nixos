@@ -1,4 +1,5 @@
 { ... }: {
+  imports = [ ./vmware.nix ];
   virtualisation = {
     docker = {
       rootless = {

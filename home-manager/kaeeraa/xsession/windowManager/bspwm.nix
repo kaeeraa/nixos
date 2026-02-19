@@ -28,7 +28,7 @@ in {
     };
 
     startupPrograms = [
-      "${pkgs.feh}/bin/feh --bg-fill ~/Pictures/Wallpapers/nixos-wallpaper.png"
+      "${pkgs.paperview}/bin/paperview ~/Pictures/Wallpapers/corridor/ 1"
       "${pkgs.dunst}/bin/dunst"
     ];
 

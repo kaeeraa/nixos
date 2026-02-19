@@ -23,14 +23,14 @@ in {
     ./initrd.nix
     ./tmp.nix
     ./loader
-    ./zfs.nix
+    #./zfs.nix
     ./kernel
   ];
 
   boot = {
-    blacklistedKernelModules = [ "k10temp" ];
-    extraModulePackages = [ config.boot.kernelPackages.zenpower ];
-    kernelModules = [ "zenpower" ];
+    # blacklistedKernelModules = [ "k10temp" ];
+    # extraModulePackages = [ config.boot.kernelPackages.zenpower ];
+    # kernelModules = [ "zenpower" ];
     kernelPackages = latestKernelPackage;
     kernelParams = ["usbcore.quirks=5566:0008:gki"];
   };

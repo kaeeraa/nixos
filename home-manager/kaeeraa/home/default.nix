@@ -8,9 +8,6 @@
       # System
       nh
 
-      # Development - IDE
-      helix
-
       # Development - Language Servers
       nil
       clang-tools
@@ -20,7 +17,7 @@
       vue-language-server
 
       # Development - Complilers
-      python313
+      python314
       nodejs_24
       javaPackages.compiler.temurin-bin.jre-25
 
@@ -34,6 +31,7 @@
       xorg.xbacklight
       xclip
       ksnip
+      paperview
 
       # Networking - Messengers
       ayugram-desktop
@@ -45,6 +43,10 @@
       yandex-music
       easyeffects
       v2rayn
+      cargo
+      gccgo15
+      unzip
+      #postman
     ];
 
     sessionVariables = {

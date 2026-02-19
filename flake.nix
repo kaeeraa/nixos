@@ -15,6 +15,10 @@
     };
     zen-browser.url = "github:youwen5/zen-browser-flake";
     freesmlauncher.url = "git+https://github.com/FreesmTeam/FreesmLauncher.git";
+    mango = {
+      url = "github:DreamMaoMao/mango";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -25,6 +29,7 @@
     stylix,
     zen-browser,
     freesmlauncher,
+    mango,
   } @ inputs: {
     nixosConfigurations = {
       kaeeraa-dev = nixpkgs.lib.nixosSystem {
@@ -32,6 +37,7 @@
         specialArgs = {inherit inputs;};
         modules = [
           # Shared modules
+          mango.nixosModules.mango
           stylix.nixosModules.stylix
           disko.nixosModules.disko
           home-manager.nixosModules.home-manager
@@ -44,6 +50,10 @@
             home-manager.backupFileExtension = "hm.bck";
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+          }
+          # mango mango mango mango
+          {
+            programs.mango.enable = true;
           }
         ];
       };
