@@ -1,6 +1,7 @@
-{ ... }: {
-  imports = [ ./vmware.nix ];
+{...}: {
+  imports = [./vmware.nix ./libvirtd.nix];
   virtualisation = {
+    spiceUSBRedirection.enable = true;
     docker = {
       rootless = {
         enable = true;

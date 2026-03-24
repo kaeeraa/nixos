@@ -19,6 +19,20 @@
       url = "github:DreamMaoMao/mango";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    noctalia = {
+      url = "github:kaeeraa/noctalia-shell?ref=9024b931abe5c7c0f409e6718e897ef611084af2";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    ayugram-desktop = {
+      type = "git";
+      submodules = true;
+      url = "https://github.com/ndfined-crp/ayugram-desktop/";
+    };
+    kpl.url = "github:kaeeraa/kpl";
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
@@ -30,6 +44,10 @@
     zen-browser,
     freesmlauncher,
     mango,
+    noctalia,
+    kpl,
+    ayugram-desktop,
+    nix-index-database,
   } @ inputs: {
     nixosConfigurations = {
       kaeeraa-dev = nixpkgs.lib.nixosSystem {
@@ -37,23 +55,20 @@
         specialArgs = {inherit inputs;};
         modules = [
           # Shared modules
-          mango.nixosModules.mango
           stylix.nixosModules.stylix
           disko.nixosModules.disko
+          mango.nixosModules.mango
           home-manager.nixosModules.home-manager
 
           # Modules
           ./nixos/kaeeraa-dev
+          ./overlays
 
           # Users
           {
             home-manager.backupFileExtension = "hm.bck";
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-          }
-          # mango mango mango mango
-          {
-            programs.mango.enable = true;
           }
         ];
       };
@@ -68,8 +83,17 @@
         modules = [
           # Shared Modules
           stylix.homeModules.stylix
+          mango.hmModules.mango
+          noctalia.homeModules.default
+          nix-index-database.homeModules.default
+
           # Modules
           ./home-manager/kaeeraa
+          ./overlays
+
+          {
+            programs.nix-index-database.comma.enable = true;
+          }
         ];
       };
     };

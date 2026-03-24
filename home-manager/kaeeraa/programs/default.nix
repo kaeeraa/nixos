@@ -1,15 +1,20 @@
 {
   imports = [
-    ./rofi.nix
     ./vscode.nix
-    ./feh.nix
-    ./kitty.nix
+    ./ghostty.nix
     ./git.nix
     ./gh.nix
     ./gpg.nix
     ./neovim.nix
     ./btop.nix
-    ./autorandr.nix
+    ./noctalia.nix
+    ./delta.nix
+    ./git-cliff.nix
+    ./bat.nix
+    ./ripgrep.nix
+    ./fd.nix
+    ./eza.nix
+    ./zoxide.nix
   ];
 
   programs.home-manager.enable = true;

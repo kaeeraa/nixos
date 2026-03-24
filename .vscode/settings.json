@@ -1,0 +1,6 @@
+{
+  "sonarlint.connectedMode.project": {
+    "connectionId": "kaeeraa",
+    "projectKey": "kaeeraa_nixos"
+  }
+}

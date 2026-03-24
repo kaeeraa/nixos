@@ -1,5 +1,5 @@
 {
-  programs.feh = {
+  programs.ripgrep = {
     enable = true;
   };
 }

@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   home = {
     username = "kaeeraa";
     homeDirectory = "/home/kaeeraa";
@@ -28,13 +32,11 @@
       direnv
 
       # Desktop Environment
-      xorg.xbacklight
-      xclip
-      ksnip
-      paperview
+      hyprshot
+      gpu-screen-recorder
 
       # Networking - Messengers
-      ayugram-desktop
+      inputs.ayugram-desktop.packages.${pkgs.system}.ayugram-desktop
 
       # Networking - Bluetooth
       rofi-bluetooth
@@ -46,13 +48,24 @@
       cargo
       gccgo15
       unzip
-      #postman
+      fortune
+      kdePackages.qt6ct
     ];
 
     sessionVariables = {
-      TERMINAL = "kitty";
+      TERMINAL = "ghostty";
       BROWSER = "zen";
-      EDITOR = "hx";
+      EDITOR = "nvim";
+    };
+
+    shellAliases = {
+      "cat" = "bat";
+      "grep" = "rg";
+      "ls" = "eza --color=auto --icons=auto";
+      "du" = "dust";
+      "df" = "duf";
+      "cd" = "z";
+      "man" = "tldr";
     };
   };
 }

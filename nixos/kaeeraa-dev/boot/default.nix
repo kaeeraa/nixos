@@ -30,8 +30,13 @@ in {
   boot = {
     # blacklistedKernelModules = [ "k10temp" ];
     # extraModulePackages = [ config.boot.kernelPackages.zenpower ];
-    # kernelModules = [ "zenpower" ];
+    kernelModules = [
+      "nvidia"
+      "nvidia_modeset"
+      "nvidia_uvm"
+      "nvidia_drm"
+    ];
     kernelPackages = latestKernelPackage;
-    kernelParams = ["usbcore.quirks=5566:0008:gki"];
+    kernelParams = ["usbcore.quirks=5566:0008:gki" "nvidia-drm.modeset=1" "nvidia-drm.useDisplayDevice=none" "reboot=pci" "acpi=force" "usbcore.autosuspend=-1" "amd_iommu=on"];
   };
 }

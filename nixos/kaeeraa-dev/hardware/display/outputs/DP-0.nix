@@ -1,5 +1,10 @@
 {
-  hardware.display.outputs."DP-0" = {
-    mode = "1920x1080@165MR";
+  hardware.display.outputs = {
+    "DP-1" = {
+      mode = "1920x1080@165MR";
+    };
+    "DP-4" = {
+      mode = "1920x1080@165MR";
+    };
   };
 }

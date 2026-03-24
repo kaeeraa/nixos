@@ -12,5 +12,8 @@
     ./gnome-keyring.nix
     ./zfs.nix
     ./udev.nix
+    ./power-profiles-daemon.nix
+    ./upower.nix
+    ./mihomo.nix
   ];
 }

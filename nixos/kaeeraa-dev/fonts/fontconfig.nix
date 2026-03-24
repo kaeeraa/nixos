@@ -1,9 +1,9 @@
 {
   fonts.fontconfig = {
     defaultFonts = {
-      monospace = ["JetBrainsMono Nerd Font"];
-      sansSerif = ["JetBrainsMono Nerd Font"];
-      serif = ["JetBrainsMono Nerd Font"];
+      monospace = ["BlexMono Nerd Font"];
+      sansSerif = ["BlexMono Nerd Font"];
+      serif = ["BlexMono Nerd Font"];
     };
   };
 }

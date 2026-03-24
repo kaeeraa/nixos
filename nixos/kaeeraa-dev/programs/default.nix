@@ -6,5 +6,8 @@
     ./nekoray.nix
     ./fish.nix
     ./nix-ld.nix
+    ./mango.nix
+    ./virt-manager.nix
+    # ./clash-verge.nix
   ];
 }

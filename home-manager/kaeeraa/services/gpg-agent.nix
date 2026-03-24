@@ -2,7 +2,7 @@
   services.gpg-agent = {
     enable = true;
     pinentry = {
-      package = pkgs.pinentry-gtk2;
+      package = pkgs.pinentry-qt;
       program = "pinentry";
     };
   };

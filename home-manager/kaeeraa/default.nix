@@ -5,15 +5,14 @@
 }: {
   imports =
     [
-      ./colors.nix
       ./home
       ./programs
       ./services
       ./gtk.nix
       ./dconf.nix
       ./xdg.nix
-      ./xresources.nix
       ./nixpkgs
+      ./qt.nix
     ]
-    ++ lib.optional (hostName == "kaeeraa-dev") ./xsession;
+    ++ lib.optional (hostName == "kaeeraa-dev") ./wayland;
 }

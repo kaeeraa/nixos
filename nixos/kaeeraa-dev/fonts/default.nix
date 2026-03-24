@@ -4,8 +4,7 @@
   fonts = {
     enableDefaultPackages = true;
     packages = with pkgs; [
-      jetbrains-mono
-      nerd-fonts.jetbrains-mono
+      nerd-fonts.blex-mono
       material-design-icons
     ];
   };

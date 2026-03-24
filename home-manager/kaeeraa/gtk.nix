@@ -2,19 +2,16 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Catppuccin-Latte-Standart-Red";
-      package = pkgs.catppuccin-gtk.override {
-        variant = "latte";
-        accents = ["red"];
-      };
+      name = "adw-gtk3";
+      package = pkgs.adw-gtk3;
     };
     iconTheme = {
-      name = "Papirus-Light";
-      package = pkgs.papirus-icon-theme;
+      name = "Adwaita-Icon-Theme";
+      package = pkgs.adwaita-icon-theme;
     };
     cursorTheme = {
-      name = "Bibata-Modern-Classic";
-      package = pkgs.bibata-cursors;
+      name = "Bibata-Modern-Translucent";
+      package = pkgs.bibata-cursors-translucent;
     };
   };
 }
